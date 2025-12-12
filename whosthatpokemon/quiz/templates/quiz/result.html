@@ -1,0 +1,10 @@
+<h1>You are a {{ result_type }}-Type Pokémon!</h1>
+
+<h3>Your score breakdown:</h3>
+<ul>
+  {% for type, val in scores.items %}
+  <li>{{ type }}: {{ val }}</li>
+  {% endfor %}
+</ul>
+
+<a href="/">Take Again</a>
